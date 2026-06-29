@@ -1,0 +1,28 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hud" aria-label="Game information">
+      <div><span>Score</span><strong id="score">0</strong></div>
+      <div><span>Speed</span><strong id="speed">1x</strong></div>
+      <button id="restart" type="button">Restart</button>
+    </section>
+    <section class="arena-wrap" aria-label="Snake game arena">
+      <canvas id="game" width="600" height="600"></canvas>
+      <div class="scanlines" aria-hidden="true"></div>
+      <div id="message" class="message">
+        <h1>Neon Snake</h1>
+        <p>Press any arrow key or WASD to start.</p>
+      </div>
+    </section>
+    <p class="controls">Arrow keys / WASD to move. Score 3 points to increase speed.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
